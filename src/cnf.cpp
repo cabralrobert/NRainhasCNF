@@ -2,7 +2,7 @@
 
 CNF::CNF(int N) : N(N), qtd(0){
     ostringstream os;
-    os << "data/instance_" << N << "x" << N << ".txt";
+    os << "data/instance_" << N << "x" << N << ".cnf";
     this->locateFile = os.str();
 
     this->outFile.open(os.str());
