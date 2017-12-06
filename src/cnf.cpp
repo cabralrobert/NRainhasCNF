@@ -22,7 +22,9 @@ bool CNF::generate(){
     for(int i = 1;i <= N*N;i = i+N){
         for(int j = i;j < i+N;j++)
             outFile << j << " ";
+
         outFile << "0" << endl;
+        this->qtd++;
     }
 
     outFile << endl;
